@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>List</title>
-    </head>
-    <body>
-
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> List </title>
+</head>
+<body>
+    {% for restaurant in my_list %}
+        <ul>
+            <li>
+                <h1> {{restaurant.restaurant_name}}</h1>
+                <p>{{restaurant.Food_type}}<p>
+            </li>
+        </ul><br>
+    {% endfor %}
+</body>
 </html>
